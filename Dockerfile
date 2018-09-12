@@ -15,10 +15,8 @@ RUN dnf -y install \
 
 RUN dnf -y install amule-nogui && dnf clean all
 
-EXPOSE 4711
 EXPOSE 4712
 EXPOSE 4662
-EXPOSE 50000
 EXPOSE 4665/udp
 EXPOSE 4672/udp
 
@@ -28,4 +26,4 @@ WORKDIR /home/amule
 
 USER amule
 
-CMD ["amuled"]
+CMD ["amuled", "--log-stdout"]
