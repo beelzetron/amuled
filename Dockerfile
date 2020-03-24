@@ -2,8 +2,8 @@ FROM registry.fedoraproject.org/fedora:31
 
 LABEL maintainer "Lorenzo Dalrio <lorenzo.dalrio@gmail.com>"
 
-RUN groupadd amule \
-    && useradd -g amule -m amule
+RUN groupadd -g 1001 amule \
+    && useradd -g amule -u 973 -m amule
 
 RUN mkdir /home/amule/.aMule && \
     chown amule:amule /home/amule/.aMule && \
