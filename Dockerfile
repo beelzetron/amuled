@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:31
+FROM registry.fedoraproject.org/fedora:32
 
 LABEL maintainer "Lorenzo Dalrio <lorenzo.dalrio@gmail.com>"
 
